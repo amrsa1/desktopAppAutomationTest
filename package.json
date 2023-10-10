@@ -1,0 +1,31 @@
+{
+  "name": "desktop-app-automation-framework",
+  "version": "1.0.0",
+  "description": "Automate desktop app using wdio",
+  "scripts": {
+    "cleanReport": "if exist report rmdir report /q /s",
+    "Open-MyReport": "allure serve report/allure-results",
+    "DesktopApp-Test": "npm run cleanReport && npx wdio run src/test/config/desktopApp.conf.ts"
+  },
+  "keywords": [],
+  "author": "aMr saLem",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amrkamel1/wido-ultimate.git"
+  },
+  "dependencies": {
+    "appium": "*"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.26.0",
+    "@wdio/appium-service": "^7.26.0",
+    "@wdio/cli": "^7.27.0",
+    "@wdio/dot-reporter": "^7.26.0",
+    "@wdio/local-runner": "^7.26.0",
+    "@wdio/mocha-framework": "^7.26.0",
+    "@wdio/spec-reporter": "^7.26.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
