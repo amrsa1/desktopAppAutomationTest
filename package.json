@@ -5,7 +5,7 @@
   "scripts": {
     "cleanReport": "if exist report rmdir report /q /s",
     "Open-MyReport": "allure serve report/allure-results",
-    "DesktopApp-Test": "npm run cleanReport && npx wdio run src/test/config/desktopApp.conf.ts"
+    "test": "npm run cleanReport && npx wdio run src/test/config/desktopApp.conf.ts"
   },
   "keywords": [],
   "author": "aMr saLem",
