@@ -1,5 +1,3 @@
-Sure, here's the rephrased content in Markdown format:
-
 ### Automating Test Cases for Desktop Applications
 
 Explore the process of automating test cases for desktop applications with a proof of concept (POC) on building your very first desktop application automation test case using WebdriverIO.
